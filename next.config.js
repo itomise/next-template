@@ -14,6 +14,5 @@ const nextConfig = {
   }
 }
 
-
 // module.exports = withOffline(nextConfig)
 module.exports = nextConfig

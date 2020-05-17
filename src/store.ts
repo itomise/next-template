@@ -6,10 +6,8 @@ import {
 import { rootReducer } from './modules/rootState'
 import logger from 'redux-logger'
 
-
 export const setupStore = (): EnhancedStore => {
   const middlewares = [...getDefaultMiddleware()]
-
 
   // only development
   if (process.env.NODE_ENV === 'development') {

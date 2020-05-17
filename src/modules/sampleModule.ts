@@ -12,11 +12,10 @@ const sampleModule = createSlice({
   name: 'sample',
   initialState: sampleInitialState,
   reducers: {
-    update: (state: SampleState, action: PayloadAction<string>)  => {
+    update: (state: SampleState, action: PayloadAction<string>) => {
       return { value: action.payload }
     }
   }
 })
-
 
 export default sampleModule

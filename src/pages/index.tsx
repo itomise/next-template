@@ -6,11 +6,10 @@ import Head from 'next/head'
 const Home: NextPage = () => (
   <>
     <Head>
-      <title>title</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>next template top</title>
     </Head>
 
-    <p>タイトル</p>
+    <p>トップ</p>
   </>
 )
 

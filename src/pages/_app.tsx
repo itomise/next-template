@@ -12,15 +12,13 @@ const store = setupStore()
 import 'sanitize.css'
 import '../styles/common.scss'
 
-// component style - - -
-
-
 class MyApp extends App {
   render(): JSX.Element {
     const { Component, pageProps }: AppProps = this.props
 
     return (
       <Provider store={store}>
+        <Header />
         <Component {...pageProps} />
       </Provider>
     )
