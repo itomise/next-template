@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next --port 8888",
     "build": "next build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ."
   },

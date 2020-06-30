@@ -1,0 +1,17 @@
+@import '~src/styles/foundation/util.scss';
+
+
+
+// PC
+@include mq(lg) {
+  .sp {
+    display: none !important;
+  }
+}
+
+// SP
+@include mq(sm) {
+  .pc {
+    display: none !important;
+  }
+}

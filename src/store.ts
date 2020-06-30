@@ -3,7 +3,7 @@ import {
   getDefaultMiddleware,
   EnhancedStore
 } from '@reduxjs/toolkit'
-import { rootReducer } from './modules/rootState'
+import { rootReducer } from './modules/store/rootState'
 import logger from 'redux-logger'
 
 export const setupStore = (): EnhancedStore => {

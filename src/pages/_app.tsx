@@ -1,16 +1,15 @@
 import * as React from 'react'
 import App, { AppProps } from 'next/app'
-
 import { Provider } from 'react-redux'
 import { setupStore } from '~/store'
 
-import Header from '../components/layout/Header'
-
 const store = setupStore()
 
-// global style - - -
 import 'sanitize.css'
 import '../styles/common.scss'
+
+import { Layout } from '~/components/layout/Layout'
+import { Header } from '~/components/layout/Header/Header'
 
 class MyApp extends App {
   render(): JSX.Element {
@@ -18,8 +17,10 @@ class MyApp extends App {
 
     return (
       <Provider store={store}>
-        <Header />
-        <Component {...pageProps} />
+        <Layout>
+          <Header />
+          <Component {...pageProps} />
+        </Layout>
       </Provider>
     )
   }

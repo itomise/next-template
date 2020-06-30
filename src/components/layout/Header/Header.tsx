@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextComponentType } from 'next'
 
-import style from '../../styles/layout/Header.module.scss'
+import style from './Header.module.scss'
 
 const Header: NextComponentType = () => {
   return (
@@ -13,4 +13,4 @@ const Header: NextComponentType = () => {
   )
 }
 
-export default Header
+export { Header }
