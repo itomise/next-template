@@ -6,7 +6,7 @@ import style from './Header.module.scss'
 const Header: NextComponentType = () => {
   return (
     <>
-      <div className={style.l_header}>
+      <div className={style.wrap}>
         <p>Header</p>
       </div>
     </>

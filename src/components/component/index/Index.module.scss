@@ -1,0 +1,17 @@
+@import '~src/styles/foundation/util.scss';
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  img {
+    width: 120px;
+  }
+  h1 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+}
