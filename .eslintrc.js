@@ -1,5 +1,4 @@
 module.exports = {
-  // 整形を効かせたいファイルなので除外を解除
   ignorePatterns: ['!.eslintrc.js', '!.babelrc.js'],
   extends: [
     'eslint:recommended',
@@ -29,7 +28,6 @@ module.exports = {
     }
   },
   rules: {
-    // 必要に応じてルールを追加
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-explicit-any': 'off'

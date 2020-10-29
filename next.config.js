@@ -1,4 +1,3 @@
-// ファイルの先頭に eslint-diable を追加
 /* eslint-disable
     @typescript-eslint/no-var-requires,
     @typescript-eslint/explicit-function-return-type
