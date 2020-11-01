@@ -1,7 +1,13 @@
-# next.js テンプレート
+# Next Template
 
+## Node Version
+v12.18.4
+
+## Usage
 ```
-yarn install
+yarn
 
 yarn dev
+
+yarn export
 ```

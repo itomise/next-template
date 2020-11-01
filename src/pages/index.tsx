@@ -1,17 +1,17 @@
-import * as React from 'react'
 import { NextPage } from 'next'
-
 import Head from 'next/head'
-import { Index } from '~/components/component/index/Index'
+import { Hello } from '~/components/index/Hello'
 
-const Home: NextPage = () => (
-  <>
-    <Head>
-      <title>next template top</title>
-    </Head>
+const Home: NextPage = () => {
+  return (
+    <>
+      <Head>
+        <title>Top</title>
+      </Head>
 
-    <Index />
-  </>
-)
+      <Hello />
+    </>
+  )
+}
 
 export default Home

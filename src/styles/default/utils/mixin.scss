@@ -1,0 +1,11 @@
+@import '../config/variable.scss';
+
+// media query
+// sp : [sm]
+// tab : [md]
+// pc : [lg]
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

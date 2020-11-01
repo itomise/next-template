@@ -8,8 +8,8 @@ interface CustomDocumentInterface {
 
 class CustomDocument extends Document implements CustomDocumentInterface {
   url = 'https://example.com'
-  title = 'Demo Next.js'
-  description = 'Demo of Next.js'
+  title = 'SPC Content'
+  description = 'SPC Content description'
 
   render(): JSX.Element {
     return (
