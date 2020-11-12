@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export -o htdocs/",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore .",
+    "postinstall": "typesync"
   },
   "engines": {
     "node": "12.x"
@@ -21,9 +22,13 @@
     "sass": "^1.26.3"
   },
   "devDependencies": {
+    "@types/eslint": "^6.8.1",
+    "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/node": "^13.9.1",
+    "@types/prettier": "^1.19.1",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "@types/sass": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "eslint": "^6.8.0",
@@ -33,7 +38,8 @@
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "typesync": "^0.8.0"
   },
   "browserslist": [
     "last 2 version",
