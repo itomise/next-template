@@ -14,8 +14,8 @@ $campusHeight-sp: 667;
 
 $breakpoints: (
   'sp': 'screen and (max-width: #{$breakPoint-sp - 1}px)',
-  'tab': 'screen and (min-width: #{$breakPoint-sp}px) and (max-width: #{$breakPoint-tab})',
-  'pc': 'screen and (min-width: #{$breakPoint-sp})',
+  'tab': 'screen and (min-width: #{$breakPoint-sp}px) and (max-width: #{$breakPoint-tab}px)',
+  'pc': 'screen and (min-width: #{$breakPoint-sp}px)',
 ) !default;
 
 $baseFont: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
