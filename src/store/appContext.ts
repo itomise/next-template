@@ -11,26 +11,26 @@ const reducer = (state: State, action: Action): State => {
     case 'INCREMENT':
       return {
         ...state,
-        count: state.count + 1
+        count: state.count + 1,
       }
     case 'DECREMENT':
       return {
         ...state,
-        count: state.count - 1
+        count: state.count - 1,
       }
     default:
       return state
   }
 }
 const initialState: State = {
-  count: 0
+  count: 0,
 }
 
 export const AppContext = createContext(
   {} as {
     appState: State
     appDispatch: Dispatch<Action>
-  }
+  },
 )
 
 export const useAppReducer = (): [State, Dispatch<Action>] =>
