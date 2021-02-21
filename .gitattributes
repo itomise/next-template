@@ -1,0 +1,7 @@
+*.scss linguist-language=TypeScript  
+
+folder/* linguist-vendored  # vendored codeとして認識
+file.js linguist-vendored=false  # vendored codeから除外
+
+folder/* linguist-documentation  # documentationとして認識
+file.rb linguist-documentation=false  # documentationから除外
