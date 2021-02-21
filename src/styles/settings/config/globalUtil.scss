@@ -1,4 +1,4 @@
-@use '~src/styles/default/components.scss' as comp;
+@use '../components.scss' as comp;
 
 .pc {
   @include comp.mq-down(sm) {
@@ -10,4 +10,8 @@
   @include comp.mq-up(sm) {
     display: none !important;
   }
+}
+
+.none {
+  display: none !important;
 }
