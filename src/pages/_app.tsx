@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { AppProps } from 'next/app'
 
-import 'sanitize.css'
 import '../styles/default/global.scss'
 
 import { Layout } from '~/components/layout/Layout'

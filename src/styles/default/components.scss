@@ -1,3 +1,4 @@
-@import './config/variable.scss';
-@import './utils/function.scss';
-@import './utils/mixin.scss';
+@forward './utils/function.scss';
+@forward './utils/mixin.scss';
+@forward './utils/variable.scss';
+@forward './utils/easing.scss';

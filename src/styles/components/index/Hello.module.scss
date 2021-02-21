@@ -1,4 +1,4 @@
-@import '~src/styles/default/components.scss';
+@use '~src/styles/default/components.scss' as comp;
 
 .wrap {
   display: flex;

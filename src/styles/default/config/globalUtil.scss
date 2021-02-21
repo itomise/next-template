@@ -1,0 +1,13 @@
+@use '~src/styles/default/components.scss' as comp;
+
+.pc {
+  @include comp.mq-down(sm) {
+    display: none !important;
+  }
+}
+
+.sp {
+  @include comp.mq-up(sm) {
+    display: none !important;
+  }
+}

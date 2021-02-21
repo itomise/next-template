@@ -1,30 +1,21 @@
-@import '../config/variable.scss';
+@use './variable.scss' as var;
 
-// rem を計算
-@function rem($px) {
-  @return ($px / 15) * 1rem;
-}
-
-// vw に変換 ( pc )
 @function vwPc($size){
-  $rate: 100 / $campusWidth-pc;
+  $rate: 100 / var.$campusWidth-pc;
   @return $rate * $size * 1vw;
 }
 
-// vw に変換 ( sp )
 @function vwSp($size){
-  $rate: 100 / $campusWidth-sp;
+  $rate: 100 / var.$campusWidth-sp;
   @return $rate * $size * 1vw;
 }
 
-// vh に変換 ( pc )
 @function vhPc($size){
-  $rate: 100 / $campusHeight-pc;
+  $rate: 100 / var.$campusHeight-pc;
   @return $rate * $size * 1vh;
 }
 
-// vh に変換 ( sp )
 @function vhSp($size){
-  $rate: 100 / $campusHeight-sp;
+  $rate: 100 / var.$campusHeight-sp;
   @return $rate * $size * 1vh;
 }
