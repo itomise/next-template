@@ -1,4 +1,4 @@
-# Next Template
+# Next.js dev Template
 
 ## Node Version
 v12.18.4
