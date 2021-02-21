@@ -9,5 +9,5 @@ yarn
 
 yarn dev
 
-yarn export
+yarn generate
 ```

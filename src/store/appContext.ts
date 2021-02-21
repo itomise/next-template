@@ -1,13 +1,35 @@
 import { createContext, Dispatch, useReducer } from 'react'
 
 type State = {
+  launch: boolean
+  loading: boolean
   count: number
 }
 
-type Action = { type: 'INCREMENT' } | { type: 'DECREMENT' }
+const initialState: State = {
+  launch: false,
+  loading: false,
+  count: 0,
+}
+
+type Action =
+  | { type: 'INCREMENT' }
+  | { type: 'DECREMENT' }
+  | { type: 'LAUNCH' }
+  | { type: 'SET_LOADING'; value: boolean }
 
 const reducer = (state: State, action: Action): State => {
   switch (action.type) {
+    case 'LAUNCH':
+      return {
+        ...state,
+        launch: true,
+      }
+    case 'SET_LOADING':
+      return {
+        ...state,
+        loading: action.value,
+      }
     case 'INCREMENT':
       return {
         ...state,
@@ -21,9 +43,6 @@ const reducer = (state: State, action: Action): State => {
     default:
       return state
   }
-}
-const initialState: State = {
-  count: 0,
 }
 
 export const AppContext = createContext(

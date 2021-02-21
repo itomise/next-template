@@ -1,16 +1,14 @@
 import { useContext } from 'react'
+import { HelloTitle } from '~/components/molecules/index/HelloTitle'
 import { AppContext } from '~/store/appContext'
-import style from '~/styles/components/index/Hello.module.scss'
+import style from '~/styles/containers/pages/index/Hello.module.scss'
 
 const Hello: React.FC = () => {
   const { appState, appDispatch } = useContext(AppContext)
   return (
     <>
       <div className={style.wrap}>
-        <h1 className={style.h1}>Next.js Template</h1>
-        <div className={style.img}>
-          <img src="/img/test.svg" alt="" />
-        </div>
+        <HelloTitle />
         <span>{appState.count}</span>
         <div>
           <button

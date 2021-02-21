@@ -1,13 +1,11 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
-import { Hello } from '~/components/index/Hello'
+import { Meta } from '~/containers/organisms/Meta'
+import { Hello } from '~/containers/pages/index/Hello'
 
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Top</title>
-      </Head>
+      <Meta id="index" />
 
       <Hello />
     </>

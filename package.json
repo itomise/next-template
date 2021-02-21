@@ -7,7 +7,7 @@
     "dev": "next dev -p 8888",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o htdocs/",
+    "generate": "next build && next export -o htdocs/",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore .",
     "postinstall": "typesync"
   },

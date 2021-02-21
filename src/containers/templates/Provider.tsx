@@ -1,10 +1,10 @@
-import { AppContext, useAppReducer } from '~/store/appContext'
+import { useAppReducer, AppContext } from '~/store/appContext'
 
 type Props = {
   children: React.ReactNode
 }
 
-const Layout: React.FC<Props> = ({ children }) => {
+const Provider: React.FC<Props> = ({ children }) => {
   const [appState, appDispatch] = useAppReducer()
 
   return (
@@ -16,4 +16,4 @@ const Layout: React.FC<Props> = ({ children }) => {
   )
 }
 
-export { Layout }
+export { Provider }
