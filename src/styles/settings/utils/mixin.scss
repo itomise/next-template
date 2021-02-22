@@ -1,26 +1,12 @@
-// --- MEDIA QUERY ---
-$breakpoint-up: (
-  'sm': 'screen and (min-width: 640px)',
-  'md': 'screen and (min-width: 768px)',
-  'lg': 'screen and (min-width: 1024px)',
-  'xl': 'screen and (min-width: 1280px)',
-) !default;
-
-$breakpoint-down: (
-  'sm': 'screen and (max-width: 639px)',
-  'md': 'screen and (max-width: 767px)',
-  'lg': 'screen and (max-width: 1023px)',
-  'xl': 'screen and (max-width: 1279px)',
-) !default;
+@use './variable.scss' as var;
 
 @mixin mq-up($breakpoint: md) {
-  @media #{map-get($breakpoint-up, $breakpoint)} {
+  @media #{map-get(var.$breakpoint-up, $breakpoint)} {
     @content;
   }
 }
-
 @mixin mq-down($breakpoint: md) {
-  @media #{map-get($breakpoint-down, $breakpoint)} {
+  @media #{map-get(var.$breakpoint-down, $breakpoint)} {
     @content;
   }
 }
