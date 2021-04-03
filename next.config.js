@@ -2,16 +2,15 @@
     @typescript-eslint/no-var-requires,
     @typescript-eslint/explicit-function-return-type
 */
-const { resolve } = require('path')
 const isProd = process.env.NODE_ENV === 'production'
+const withPWA = require('next-pwa')
 
-const nextConfig = {
+const nextConfig = withPWA({
   distDir: isProd ? '.next-prod' : '.next',
-  webpack: (config) => {
-    config.resolve.alias['~'] = resolve(__dirname, 'src')
-    return config
-  },
   trailingSlash: true,
-}
+  pwa: {
+    dest: 'public',
+  },
+})
 
 module.exports = nextConfig
