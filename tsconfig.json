@@ -18,7 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "types": ["@emotion/react/types/css-prop"]
+    "types": [
+      "@emotion/react/types/css-prop"
+    ]
   },
   "exclude": [
     "node_modules"

@@ -1,4 +1,3 @@
-import React from 'react'
 import { css } from '@emotion/react'
 import { useRecoilState } from 'recoil'
 import { HelloTitle } from 'components/molecules/index/HelloTitle'
