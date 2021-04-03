@@ -1,20 +1,19 @@
 import * as React from 'react'
 import { AppProps } from 'next/app'
 
-import '../styles/settings/global.scss'
-
-import { Provider } from '~/containers/templates/Provider'
-import { Loading } from '~/containers/templates/Loading'
 import { Layout } from '~/containers/templates/Layout'
+import { RecoilRoot } from 'recoil'
+import { Global } from '@emotion/react'
+import { globalStyles } from '~/styles/global'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-    <Provider>
-      <Loading />
+    <RecoilRoot>
+      <Global styles={globalStyles} />
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </Provider>
+    </RecoilRoot>
   )
 }
 

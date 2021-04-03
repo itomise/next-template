@@ -1,26 +1,20 @@
-import { useContext } from 'react'
+import { css } from '@emotion/react'
+import { useRecoilState } from 'recoil'
 import { HelloTitle } from '~/components/molecules/index/HelloTitle'
-import { AppContext } from '~/store/appContext'
-import style from '~/styles/containers/pages/index/Hello.module.scss'
+import { countState } from '~/store/app'
 
 const Hello: React.FC = () => {
-  const { appState, appDispatch } = useContext(AppContext)
+  const [count, setCount] = useRecoilState(countState)
   return (
     <>
-      <div className={style.wrap}>
+      <div css={wrap}>
         <HelloTitle />
-        <span>{appState.count}</span>
+        <span>{count}</span>
         <div>
-          <button
-            onClick={(): void => appDispatch({ type: 'INCREMENT' })}
-            className={style.button}
-          >
+          <button onClick={(): void => setCount((num) => num + 1)} css={button}>
             +
           </button>
-          <button
-            onClick={(): void => appDispatch({ type: 'DECREMENT' })}
-            className={style.button}
-          >
+          <button onClick={(): void => setCount((num) => num - 1)} css={button}>
             -
           </button>
         </div>
@@ -28,5 +22,23 @@ const Hello: React.FC = () => {
     </>
   )
 }
+
+const wrap = css`
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  flex-direction: column;
+`
+const button = css`
+  margin: 10px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+`
 
 export { Hello }

@@ -8,5 +8,9 @@
     "typescript",
     "typescriptreact"
   ],
-  "extensions.showRecommendationsOnlyOnDemand": false
+  "extensions.showRecommendationsOnlyOnDemand": false,
+  "cSpell.words": [
+    "vwpc",
+    "vwsp"
+  ]
 }
