@@ -1,5 +1,5 @@
 import { css, SerializedStyles } from '@emotion/react'
-import config from '~/styles/config'
+import config from 'styles/config'
 import mixin from './mixin'
 import calc from './calc'
 import colors from './colors'

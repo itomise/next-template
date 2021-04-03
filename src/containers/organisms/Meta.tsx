@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { routeNameList } from '~/interfaces/meta'
-import { metaData } from '~/utils/metaData'
+import { routeNameList } from 'interfaces/meta'
+import { metaData } from 'utils/metaData'
 
 type Props = {
   id: routeNameList

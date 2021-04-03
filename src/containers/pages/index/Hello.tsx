@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 import { useRecoilState } from 'recoil'
-import { HelloTitle } from '~/components/molecules/index/HelloTitle'
-import { countState } from '~/store/app'
+import { HelloTitle } from 'components/molecules/index/HelloTitle'
+import { countState } from 'store/app'
 
 const Hello: React.FC = () => {
   const [count, setCount] = useRecoilState(countState)

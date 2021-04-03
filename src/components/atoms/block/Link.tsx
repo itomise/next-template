@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import { ParsedUrlQueryInput } from 'querystring'
 import cn from 'classnames'
-import style from '~/styles/components/block/Link.module.scss'
+import style from 'styles/components/block/Link.module.scss'
 
 type Props = {
   id?: string

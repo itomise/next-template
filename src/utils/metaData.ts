@@ -1,4 +1,4 @@
-import { metaDataType } from '~/interfaces/meta'
+import { metaDataType } from 'interfaces/meta'
 
 const metaData: metaDataType = {
   meta: {
