@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import { routeNameList } from 'interfaces/meta'
 import { metaData } from 'utils/metaData'

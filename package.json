@@ -9,6 +9,7 @@
     "generate": "npm-run-all -s generate:*",
     "generate:build": "next build",
     "generate:export": "next export -o htdocs/",
+    "test": "jest src/__tests__/.*/*.test.tsx?$",
     "postinstall": "typesync"
   },
   "engines": {
@@ -29,6 +30,7 @@
     "@types/classnames": "^2.2.11",
     "@types/eslint": "^6.8.1",
     "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/jest": "^26.0.22",
     "@types/node": "^13.9.1",
     "@types/prettier": "^1.19.1",
     "@types/react": "^16.9.23",
@@ -41,9 +43,12 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "terser-webpack-plugin": "^5.1.1",
+    "ts-jest": "^26.5.4",
     "typescript": "^3.8.3",
     "typesync": "^0.8.0"
   },
