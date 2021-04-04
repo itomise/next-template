@@ -12,4 +12,10 @@ module.exports = {
       },
     },
   },
+  // DMX と SVG の変換処理を追加
+  transform: {
+    '^.+\\.svg$': 'jest-svg-transformer',
+    '^.+\\.jsx?$': 'ts-jest',
+    '^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx',
+  },
 }

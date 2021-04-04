@@ -5,12 +5,13 @@
 const isProd = process.env.NODE_ENV === 'production'
 const withPWA = require('next-pwa')
 
-const nextConfig = withPWA({
+const nextConfig = {
   distDir: isProd ? '.next-prod' : '.next',
   trailingSlash: true,
   pwa: {
+    disable: !isProd,
     dest: 'public',
   },
-})
+}
 
-module.exports = nextConfig
+module.exports = withPWA(nextConfig)
