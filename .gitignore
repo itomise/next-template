@@ -36,5 +36,3 @@ yarn-error.log*
 **/public/worker-*.js.map
 
 storybook-static
-
-src/storyshots/__snapshots__/__diff_output__
