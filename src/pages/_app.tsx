@@ -8,12 +8,14 @@ import { globalStyles } from 'styles/global'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-    <RecoilRoot>
+    <>
       <Global styles={globalStyles} />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </RecoilRoot>
+      <RecoilRoot>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </RecoilRoot>
+    </>
   )
 }
 
