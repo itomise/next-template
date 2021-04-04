@@ -2,8 +2,8 @@ import { metaDataType } from 'interfaces/meta'
 
 const metaData: metaDataType = {
   meta: {
-    domain: 'http://localhost',
-    ogpImagePath: '/assets/img/common/ogp.png',
+    domain: process.env.BASE_DOMAIN ?? 'http://example.co.jp',
+    ogpImagePath: '/ogp.png',
     type: 'website',
     websiteName: 'Next.js Template',
   },
