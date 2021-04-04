@@ -11,10 +11,10 @@
 - Prettier
 - Jest
 
-# Node Version
+## Node Version
 v14.16.0
 
-# Usage
+## Usage
 ```
 yarn
 
