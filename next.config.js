@@ -3,6 +3,8 @@
     @typescript-eslint/explicit-function-return-type
 */
 const isProd = process.env.NODE_ENV === 'production'
+const withPlugins = require('next-compose-plugins')
+const withTM = require('next-transpile-modules')(['recoil'])
 const withPWA = require('next-pwa')
 
 const nextConfig = {
@@ -14,4 +16,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withPWA(nextConfig)
+module.exports = withPlugins([withPWA, withTM], nextConfig)
