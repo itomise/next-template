@@ -10,6 +10,7 @@
 - ESLint
 - Prettier
 - Jest
+- pathpida
 
 ## Node Version
 v14.16.0
