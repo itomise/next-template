@@ -95,7 +95,6 @@ const globalStyles = css`
     text-align: left;
     width: 100%;
     height: 100%;
-    cursor: default;
   }
   body {
     -webkit-font-smoothing: antialiased;
