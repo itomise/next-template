@@ -20,7 +20,7 @@ const Meta: React.FC<Props> = ({ id, dynamic }) => {
   if (dynamic) {
     _title = dynamic.title + _title
     _description = dynamic.title
-    _path = '/' + dynamic.path
+    _path = data.path + dynamic.path
   }
 
   return (
