@@ -37,14 +37,10 @@
     "@storybook/addon-links": "^6.3.2",
     "@storybook/react": "^6.3.2",
     "@types/classnames": "^2.2.11",
-    "@types/eslint": "^6.8.1",
-    "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/jest": "^26.0.22",
     "@types/node": "^13.9.1",
-    "@types/prettier": "^1.19.1",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "@types/sass": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "babel-loader": "^8.2.2",
@@ -59,8 +55,7 @@
     "pathpida": "^0.15.2",
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.3",
-    "typescript": "^4.3.5",
-    "typesync": "^0.8.0"
+    "typescript": "^4.3.5"
   },
   "browserslist": [
     "last 2 version"
