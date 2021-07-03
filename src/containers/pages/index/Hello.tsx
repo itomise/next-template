@@ -2,13 +2,17 @@ import { css } from '@emotion/react'
 import { useRecoilState } from 'recoil'
 import { countState } from 'store/app'
 
-const Hello: React.FC = () => {
+export type Props = {
+  title: string
+}
+
+const Hello: React.FC<Props> = (props) => {
   const [count, setCount] = useRecoilState(countState)
   return (
     <>
       <div css={root}>
         <div css={title}>
-          <h1 className="h1">Next.js Template</h1>
+          <h1 className="h1">{props.title}</h1>
           <div className="author">
             <a
               href="https://github.com/itomise"

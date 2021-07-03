@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <>
       <Meta id="index" />
 
-      <Hello />
+      <Hello title="Next.js Template" />
     </>
   )
 }
