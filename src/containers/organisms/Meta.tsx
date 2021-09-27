@@ -28,6 +28,7 @@ const Meta: React.FC<Props> = ({ id, dynamic }) => {
       <title>{_title}</title>
       <link rel="canonical" href={metaData.meta.domain + _path} />
       <meta name="description" content={_description} />
+      <meta property="og:url" content={metaData.meta.domain + _path} />
       <meta property="og:title" content={_title} />
       <meta property="og:description" content={_description} />
       <meta property="og:site_name" content={_title} />
