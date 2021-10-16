@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { routeNameList } from 'interfaces/meta'
-import { metaData } from 'utils/metaData'
+import { routeNameList } from './Meta.type'
+import { metaData } from 'components/functional/Meta/Meta.constant'
 
 type Props = {
   id: routeNameList
@@ -28,7 +28,6 @@ const Meta: React.FC<Props> = ({ id, dynamic }) => {
       <title>{_title}</title>
       <link rel="canonical" href={metaData.meta.domain + _path} />
       <meta name="description" content={_description} />
-      <meta property="og:url" content={metaData.meta.domain + _path} />
       <meta property="og:title" content={_title} />
       <meta property="og:description" content={_description} />
       <meta property="og:site_name" content={_title} />

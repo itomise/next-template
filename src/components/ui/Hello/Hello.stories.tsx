@@ -1,6 +1,6 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import { Hello, Props } from 'containers/pages/index/Hello'
+import { Hello, Props } from 'components/ui/Hello/Hello'
 
 export default {
   title: 'Hello',
@@ -8,11 +8,8 @@ export default {
 } as Meta
 
 export const Default: Story<Props> = (props) => (
-  <Hello
-    title=""
-    {...props}
-  />
+  <Hello title="" count={0} {...props} />
 )
 Default.args = {
-  title: 'test'
+  title: 'test',
 }

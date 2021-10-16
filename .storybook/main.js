@@ -10,11 +10,11 @@ module.exports = {
     config.resolve.alias = {
       ...config.resolve.alias,
       components: resolve(__dirname, '../src/components'),
-      containers: resolve(__dirname, '../src/containers'),
       hooks: resolve(__dirname, '../src/hooks'),
+      interfaces: resolve(__dirname, '../src/interfaces'),
       pages: resolve(__dirname, '../src/pages'),
       store: resolve(__dirname, '../src/store'),
-      utils: resolve(__dirname, '../src/utils'),
+      libs: resolve(__dirname, '../src/libs'),
       styles: resolve(__dirname, '../src/styles'),
     }
     config.module.rules.push({
