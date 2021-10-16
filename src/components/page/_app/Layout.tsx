@@ -1,18 +1,20 @@
 import { css } from '@emotion/react'
+import { ReactNode } from '@reach/router/node_modules/@types/react'
 
 type Props = {
-  children: React.ReactNode
+  children: ReactNode
 }
-const Layout: React.FC<Props> = ({ children }) => {
+
+export const Layout = ({ children }: Props) => {
   return (
     <>
-      <div css={root}>{children}</div>
+      <div css={style.page}>{children}</div>
     </>
   )
 }
 
-const root = css`
-  position: relative;
-`
-
-export { Layout }
+const style = {
+  page: css`
+    position: relative;
+  `,
+}

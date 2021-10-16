@@ -7,7 +7,7 @@ export type Props = {
   decrement: () => void
 }
 
-const Hello = ({ title, count, increment, decrement }: Props) => {
+export const Hello = ({ title, count, increment, decrement }: Props) => {
   return (
     <>
       <div css={style.root}>
@@ -79,5 +79,3 @@ const style = {
     cursor: pointer;
   `,
 }
-
-export { Hello }

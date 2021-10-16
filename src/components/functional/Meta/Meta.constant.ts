@@ -1,6 +1,6 @@
 import { metaDataType } from './Meta.type'
 
-const metaData: metaDataType = {
+export const META_DATA: metaDataType = {
   meta: {
     domain: 'https://next-template-itomise.netlify.app',
     ogpImagePath: '/ogp.png',
@@ -16,5 +16,3 @@ const metaData: metaDataType = {
     },
   ],
 }
-
-export { metaData }
