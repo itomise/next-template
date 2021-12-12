@@ -13,7 +13,7 @@
 - pathpida
 
 ## Node Version
-v14.16.0
+v16.13.1
 
 ## Usage
 ```
