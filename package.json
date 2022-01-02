@@ -57,6 +57,9 @@
     "typescript": "^4.3.5"
   },
   "browserslist": [
-    "last 2 version"
+    "last 1 version",
+    "not dead",
+    "not ie 11",
+    "not op_mini all"
   ]
 }
